@@ -4,15 +4,18 @@ Date: 2026-08-27
 
 Origin: `https://aquamarine-cheesecake-c3d5fc.netlify.app/`
 
-Netlify deploy: `6a908325cda83863ca45febf`
+Netlify deploy: `6a9086e464438c0008dc4caf`
+
+Git commit: `5cb3c5ee4713756336b90e54e25ae2754c727577`
 
 ## Deployment
 
-- PASS: Netlify Next.js Runtime v5.15.13 built the application from
-  `netlify.toml`.
+- PASS: Netlify’s Git build produced and published the deterministic static
+  Next.js export from `netlify.toml`.
 - PASS: `/` returns HTTP 200 and the Pheet document.
 - PASS: Netlify serves the Next.js static route and image assets.
 - PASS: HTTPS includes HSTS and `X-Content-Type-Options: nosniff`.
+- PASS: Both Playwright production journeys passed against the public origin.
 
 ## TC-LIVE-001 — Manual production journey
 
