@@ -48,6 +48,11 @@ Verdict: SKIP — Chrome connection unavailable
 Chrome was installed but the ChatGPT/Codex browser extension bridge was not
 available, so the test could not open a Chrome session. No fallback was used.
 
+A repeat diagnostic on 2026-08-27 confirmed Chrome 152 was running, but the
+required `com.openai.codexextension` native-host manifest was absent. The
+extension-profile check was also denied by macOS permissions. This remains an
+environment setup blocker rather than an application failure.
+
 To complete this gate:
 
 1. Test the production origin in ChatGPT desktop’s built-in browser with site

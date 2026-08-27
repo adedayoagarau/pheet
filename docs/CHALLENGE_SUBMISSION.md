@@ -53,8 +53,18 @@ agent work from the reviewer.
 
 ## Submission assets still required
 
-- Public Netlify URL.
-- Public GitHub repository URL and visible license.
+### Complete
+
+- Public Netlify URL:
+  `https://aquamarine-cheesecake-c3d5fc.netlify.app/`
+- Public GitHub repository: `https://github.com/adedayoagarau/pheet`
+- Visible MIT license.
+- Deterministic manual production journey and responsive browser checks.
+- Automated WebMCP contract, lifecycle, grounding, provenance, and adversarial
+  evaluation coverage.
+
+### Remaining
+
+- Native live-origin WebMCP run in a host exposing `document.modelContext`.
 - Public YouTube demo under three minutes with audio.
-- Final screenshots and concise Devpost description.
-- Live-origin test record from `docs/EVALUATION.md`.
+- Final Devpost screenshots and concise submission description.

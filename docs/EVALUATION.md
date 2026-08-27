@@ -13,11 +13,16 @@ Run `npm test`. The challenge eval suite covers:
 
 - Golden end-to-end command sequences for investigation and interview prep.
 - Repeatability of evidence IDs across clean runs.
-- Prompt-injection text preserved only as source content.
+- Repeatability of complete workspace state and command outputs.
+- Multiple prompt-injection variants—including maximum-length source
+  content—preserved only as source data.
 - No tool-triggered question generation from instructions inside a portfolio.
 - All evidence and relevance states in the canonical fixture.
 - Source-document, graph, lens, alignment, and relational provenance integrity.
+- Cross-project source-link rejection.
 - Manual and WebMCP paths over the same controller.
+- WebMCP lifecycle cancellation, annotations, bounded output, invalid input,
+  and synchronous registration-failure fallback.
 
 The browser suite adds desktop completion, clean refresh, keyboard focus, and a
 390px layout check.
@@ -40,3 +45,11 @@ Run this in ChatGPT desktop’s in-app browser on the deployed Netlify URL:
 
 Record the browser version, account/model, deployed commit, date, and any
 registration or permission failure.
+
+### Browser setup gate
+
+If Chrome cannot connect, verify the ChatGPT browser extension under
+**Settings → Computer use**, reinstall the Browser plugin if its native-host
+manifest is absent, and enable `chrome://flags/#enable-webmcp-testing`. Do not
+mark the live-origin checklist complete based only on the mocked integration
+test; the host browser must expose `document.modelContext`.

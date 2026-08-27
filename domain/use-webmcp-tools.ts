@@ -138,7 +138,9 @@ export function useWebMcpTools(workspace: Workspace, run: RunCommand) {
     }
     void Promise.all(
       tools.map((tool) =>
-        modelContext.registerTool(tool, { signal: controller.signal }),
+        Promise.resolve().then(() =>
+          modelContext.registerTool(tool, { signal: controller.signal }),
+        ),
       ),
     ).then(
       () => updateState("ready"),
