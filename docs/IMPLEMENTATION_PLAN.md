@@ -46,7 +46,7 @@ before final evaluation only if it meets reliability criteria.
 
 | Date | Milestone | Verifiable output |
 | --- | --- | --- |
-| Aug 27 | Foundation | Next.js application runs, tests run, Vercel preview exists |
+| Aug 27 | Foundation | Next.js application runs, tests run, Netlify preview exists |
 | Aug 28 | Evidence domain | Schemas, deterministic fixture, and shared actions pass tests |
 | Aug 29 | Human workspace | Full prepared journey works without an agent |
 | Aug 30 | WebMCP | Agent operates the same visible workspace through bounded tools |
@@ -66,7 +66,7 @@ Deliverables:
 - MIT license.
 - Next.js and TypeScript scaffold.
 - Zod, test runner, lint, formatting, and type-check commands.
-- Initial Vercel project and preview deployment.
+- Initial Netlify project and preview deployment.
 - CI workflow if setup time remains proportional.
 
 Acceptance:
@@ -312,4 +312,3 @@ release reliability, place it in `docs/DECISIONS.md` as a later option.
 
 Execute `docs/FIRST_CODEX_TASK.md`. Do not begin live import until its acceptance
 criteria are satisfied.
-

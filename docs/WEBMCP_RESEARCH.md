@@ -190,7 +190,7 @@ flowchart TD
 - Direct `document.modelContext.registerTool()` inside one lifecycle-managed client hook.
 - Next.js server routes for optional Firecrawl import and structured extraction.
 - A seeded portfolio fixture so the core demo never depends on a third-party request.
-- Vercel deployment and a separate public GitHub repository with an MIT or Apache-2.0 license.
+- Netlify deployment and a public GitHub repository with an MIT or Apache-2.0 license.
 
 ## 6. Canonical objects
 
@@ -365,6 +365,6 @@ Do not begin with crawling. The visible human-agent evidence workflow is the Web
 
 - Product name: Pheet, pronounced *fit*.
 - Deterministic portfolio: fictional and deliberately constructed for varied evidence states unless the owner later substitutes an owned public portfolio.
-- Hosting: Vercel for predictable server routes and public-repository workflow.
+- Hosting: Netlify for its zero-configuration Next.js adapter and public-repository workflow.
 - Live URL import: secondary and failure-isolated; cut from the judged build if it is not reliable by the release-hardening milestone.
 - Structured extraction provider: intentionally undecided until the deterministic vertical slice is complete.

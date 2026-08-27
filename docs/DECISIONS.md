@@ -16,8 +16,8 @@ should be replaced here rather than allowed to coexist in implementation.
 | 2026-08-27 | Use one shared action layer | Prevents behavioral drift between buttons and agent tools | React UI and WebMCP handlers remain adapters over domain actions |
 | 2026-08-27 | Normalize evidence before applying a lens | The same portfolio should support different questions | Evidence graph remains stable when lenses change |
 | 2026-08-27 | Build the prepared demonstration before crawling | External retrieval and extraction can fail | The judged core journey is deterministic |
-| 2026-08-27 | Use Next.js, TypeScript, React, Zod, and Vercel | Supports client workspace, server routes, validation, and rapid deployment | Architecture stays monolithic for MVP |
-| 2026-08-27 | Use browser-local session state for MVP | Authentication and collaboration are not needed for the first journey | Persistent database is deferred |
+| 2026-08-27 | Use Next.js, TypeScript, React, Zod, and Netlify | Supports the App Router, public deployment, and rapid iteration | Architecture stays monolithic for MVP |
+| 2026-08-27 | Use clean in-memory state for the deterministic slice | The first journey should be reproducible and retain no candidate data | Refresh resets the workspace; all persistence is deferred |
 | 2026-08-27 | Stage WebMCP tools by application state | Reduces ambiguity and invalid call order | Tools available after analysis differ from initial tools |
 | 2026-08-27 | Treat all portfolio material as untrusted | Public pages may contain malicious or irrelevant instructions | Tool annotations, bounded outputs, and injection evals are required |
 | 2026-08-27 | Make uncertainty a first-class output | Portfolios are incomplete and ownership is often ambiguous | Gaps lead to interview questions rather than negative judgments |
@@ -30,7 +30,7 @@ should be replaced here rather than allowed to coexist in implementation.
 | Demonstration lens | Context understanding, technical depth, cross-functional execution | Final video narrative requires a different lens |
 | Import provider | Firecrawl for controlled retrieval | Reliability, price, or platform constraints make another retriever preferable |
 | Structured extraction | Provider-neutral server adapter | A chosen model and API are configured |
-| MVP persistence | Versioned browser storage | Authentication or collaboration enters scope |
+| MVP persistence | None; clean refresh | Authentication or collaboration enters scope |
 | Tool count | Six core tools | Evals show a combined or split tool is materially clearer |
 
 ## Open decisions
@@ -64,4 +64,3 @@ trust posture, or MVP scope:
 2. Reconcile `PRODUCT.md` and `ARCHITECTURE.md`.
 3. Update `AGENTS.md` only if the decision creates a durable agent rule.
 4. Add or change acceptance tests before declaring implementation complete.
-

@@ -307,12 +307,12 @@ For the MVP, prefer a reducer or small store with:
 - Serializable state.
 - Explicit actions.
 - Deterministic selectors.
-- Session restoration through browser storage.
+- Clean in-memory state on every refresh for the deterministic slice.
 - No server database dependency.
 
-Persist only normalized demonstration state and user edits. Do not persist full
-unreviewed imported pages in browser storage. Version the stored payload so an
-incompatible release can discard it safely.
+Persistence is deliberately deferred. A future authenticated workspace may
+persist normalized accepted data, but must never store unreviewed imported pages
+in browser storage.
 
 ## 9. WebMCP integration
 
@@ -332,13 +332,9 @@ Proposed registration states:
 
 | Workspace state | Registered tools |
 | --- | --- |
-| `empty` | `load_demo_portfolio`, `set_capability_lens` |
-| Portfolio and lens ready | Previous tools, `get_workspace_context`, `analyze_portfolio_evidence` |
-| Evidence ready | Previous read tools, `query_evidence`, `inspect_evidence`, `identify_evidence_gaps`, `create_interview_questions` |
-
-The judged demonstration may expose six tools by combining context retrieval
-with analysis or treating gap identification as part of question creation. Tool
-count is secondary to distinct responsibilities.
+| `empty` | `start_demo_review` |
+| Lens ready | `analyze_evidence` |
+| Evidence or brief ready | `query_evidence`, `inspect_evidence`, `identify_gaps`, `prepare_interview_questions` |
 
 ### Tool contract rules
 
@@ -355,12 +351,12 @@ count is secondary to distinct responsibilities.
 
 | Tool | Shared action | Mutation | Output |
 | --- | --- | --- | --- |
-| `load_demo_portfolio` | `loadDemoPortfolio` | Client state | Portfolio and project IDs |
-| `set_capability_lens` | `setCapabilityLens` | Client state | Lens and capability IDs |
-| `analyze_portfolio_evidence` | `analyzeEvidence` | Analysis state | Counts and evidence IDs |
+| `start_demo_review` | `loadDemoPortfolio` + `setCapabilityLens` | Client state | Portfolio, project, lens, and capability IDs |
+| `analyze_evidence` | `analyzeEvidence` | Analysis state | Counts and evidence IDs |
 | `query_evidence` | `queryEvidence` | View state | Active query and matching IDs |
 | `inspect_evidence` | `inspectEvidence` | Selected view | Bounded finding and source locator |
-| `create_interview_questions` | `createInterviewQuestions` | Question state | Question and gap IDs |
+| `identify_gaps` | `identifyEvidenceGaps` | None | Gaps and qualitative uncertainty |
+| `prepare_interview_questions` | `createInterviewQuestions` | Question state | Question and gap IDs |
 
 ## 10. Import and extraction
 
@@ -474,7 +470,7 @@ Model provider choice remains replaceable behind this route.
 
 Initial deployment:
 
-- Vercel preview deployments for branches and pull requests.
+- Netlify deploy previews for branches and pull requests.
 - One production deployment from `main`.
 - Server secrets configured only in the hosting environment.
 - External import disabled gracefully when credentials are absent.

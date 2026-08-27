@@ -67,7 +67,7 @@ and makes human-agent collaboration visible.
 - First release: human-facing web application with WebMCP capabilities.
 - Core model: one reusable evidence graph, examined through replaceable lenses.
 - Primary output: evidence map and interview brief.
-- Deployment target: Vercel.
+- Deployment target: Netlify.
 - Technical baseline: Next.js, TypeScript, React, and Zod.
 - Demonstration baseline: deterministic portfolio fixture.
 - Live portfolio import: controlled secondary path after the deterministic journey.
@@ -448,7 +448,7 @@ Working assumptions:
 
 - The demonstration portfolio is fictional and deliberately constructed to expose varied evidence states.
 - The demonstration lens focuses on context understanding, technical depth, and cross-functional execution.
-- Vercel is the primary hosting path.
+- Netlify is the primary hosting path.
 - Browser storage is sufficient for the judged MVP.
 
 Open decisions that do not block the first vertical slice:

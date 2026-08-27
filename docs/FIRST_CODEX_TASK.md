@@ -48,15 +48,14 @@ not pixel-perfect UI designs.
 
 - Public URL import.
 - Model API calls.
-- WebMCP registration.
 - Authentication.
 - Database persistence.
 - Candidate comparison.
 - Scoring or hiring recommendations.
 - Production analytics service.
 
-Design the shared actions so WebMCP adapters can be added without changing
-their behavior in the next milestone.
+WebMCP registration was subsequently brought into this slice by explicit
+product direction and is implemented over the same shared actions.
 
 ## Constraints
 
