@@ -16,6 +16,10 @@ Connect `adedayoagarau/pheet` to the Netlify site and use:
 These values are committed in `netlify.toml`; site-level overrides should be
 cleared unless they intentionally differ.
 
+The Next.js build plugin is declared explicitly so both local CLI deploys and
+Git continuous deployment package the OpenNext server handler, redirects, and
+static assets consistently.
+
 Every push to `main` should produce a production deploy. Pull requests may use
 Netlify deploy previews.
 
