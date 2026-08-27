@@ -1,0 +1,437 @@
+{
+  "fixtureVersion": "0.1.0",
+  "generatedFor": "Pheet deterministic demonstration",
+  "portfolio": {
+    "id": "portfolio_demo_001",
+    "ownerLabel": "Prepared demonstration portfolio",
+    "ingestionState": "prepared",
+    "projectIds": [
+      "project_context_atlas",
+      "project_evaluation_loop",
+      "project_localization_prototype"
+    ]
+  },
+  "projects": [
+    {
+      "id": "project_context_atlas",
+      "title": "Context Atlas",
+      "summary": "A structured context system that connected product concepts, content rules, source authority, and retrieval requirements for an AI-assisted support experience.",
+      "roleClaim": "Led the content-system definition and facilitated implementation decisions with product and engineering.",
+      "claimIds": [
+        "claim_context_model",
+        "claim_shared_contract",
+        "claim_retrieval_outcome"
+      ],
+      "artifactRefs": [
+        "artifact_context_schema",
+        "artifact_decision_log"
+      ],
+      "sourceRefs": [
+        "source_context_case_study",
+        "source_context_schema",
+        "source_context_decisions"
+      ]
+    },
+    {
+      "id": "project_evaluation_loop",
+      "title": "Evaluation Loop",
+      "summary": "An evaluation system for checking whether generated product content was grounded, structurally valid, and safe to publish.",
+      "roleClaim": "Designed the evaluation framework and worked with engineers to operationalize it.",
+      "claimIds": [
+        "claim_eval_framework",
+        "claim_eval_implementation",
+        "claim_eval_ownership"
+      ],
+      "artifactRefs": [
+        "artifact_eval_schema",
+        "artifact_eval_results"
+      ],
+      "sourceRefs": [
+        "source_eval_case_study",
+        "source_eval_schema",
+        "source_eval_results"
+      ]
+    },
+    {
+      "id": "project_localization_prototype",
+      "title": "Localization Prototype",
+      "summary": "A prototype that transformed source content into structured locale-ready variants for review.",
+      "roleClaim": "Created the prototype and reduced localization preparation time.",
+      "claimIds": [
+        "claim_locale_model",
+        "claim_locale_technical",
+        "claim_locale_outcome"
+      ],
+      "artifactRefs": [
+        "artifact_locale_before_after"
+      ],
+      "sourceRefs": [
+        "source_locale_case_study",
+        "source_locale_before_after"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim_context_model",
+      "projectId": "project_context_atlas",
+      "text": "Mapped product concepts, user states, content rules, and source authority before designing retrieval.",
+      "claimType": "decision",
+      "sourceRefs": ["source_context_case_study", "source_context_schema"]
+    },
+    {
+      "id": "claim_shared_contract",
+      "projectId": "project_context_atlas",
+      "text": "Facilitated a shared semantic contract used by content, product, and engineering.",
+      "claimType": "collaboration",
+      "sourceRefs": ["source_context_decisions"]
+    },
+    {
+      "id": "claim_retrieval_outcome",
+      "projectId": "project_context_atlas",
+      "text": "Improved retrieval consistency by making authority and state explicit.",
+      "claimType": "outcome",
+      "sourceRefs": ["source_context_case_study"]
+    },
+    {
+      "id": "claim_eval_framework",
+      "projectId": "project_evaluation_loop",
+      "text": "Defined structural, grounding, safety, and language-quality evaluation dimensions.",
+      "claimType": "decision",
+      "sourceRefs": ["source_eval_case_study", "source_eval_schema"]
+    },
+    {
+      "id": "claim_eval_implementation",
+      "projectId": "project_evaluation_loop",
+      "text": "Connected the evaluation schema to an automated test run and human review queue.",
+      "claimType": "responsibility",
+      "sourceRefs": ["source_eval_schema", "source_eval_results"]
+    },
+    {
+      "id": "claim_eval_ownership",
+      "projectId": "project_evaluation_loop",
+      "text": "We implemented the evaluation pipeline across the product.",
+      "claimType": "collaboration",
+      "sourceRefs": ["source_eval_case_study"]
+    },
+    {
+      "id": "claim_locale_model",
+      "projectId": "project_localization_prototype",
+      "text": "Reframed localization preparation as structured transformation rather than string replacement.",
+      "claimType": "decision",
+      "sourceRefs": ["source_locale_case_study"]
+    },
+    {
+      "id": "claim_locale_technical",
+      "projectId": "project_localization_prototype",
+      "text": "Built the production integration that generated locale-ready variants.",
+      "claimType": "responsibility",
+      "sourceRefs": ["source_locale_case_study"]
+    },
+    {
+      "id": "claim_locale_outcome",
+      "projectId": "project_localization_prototype",
+      "text": "Reduced preparation from hours to minutes in the prototype workflow.",
+      "claimType": "outcome",
+      "sourceRefs": ["source_locale_before_after"]
+    }
+  ],
+  "artifactReferences": [
+    {
+      "id": "artifact_context_schema",
+      "label": "Context object schema",
+      "sourceRef": "source_context_schema"
+    },
+    {
+      "id": "artifact_decision_log",
+      "label": "Cross-functional decision log",
+      "sourceRef": "source_context_decisions"
+    },
+    {
+      "id": "artifact_eval_schema",
+      "label": "Evaluation schema",
+      "sourceRef": "source_eval_schema"
+    },
+    {
+      "id": "artifact_eval_results",
+      "label": "Evaluation run summary",
+      "sourceRef": "source_eval_results"
+    },
+    {
+      "id": "artifact_locale_before_after",
+      "label": "Prototype workflow comparison",
+      "sourceRef": "source_locale_before_after"
+    }
+  ],
+  "sourceReferences": [
+    {
+      "id": "source_context_case_study",
+      "url": "/demo/context-atlas",
+      "pageTitle": "Context Atlas case study",
+      "locator": "Problem and approach",
+      "excerpt": "The team first mapped product concepts, user states, content rules, and source authority so retrieval could assemble the right context for each situation.",
+      "trust": "prepared"
+    },
+    {
+      "id": "source_context_schema",
+      "url": "/demo/context-atlas#schema",
+      "pageTitle": "Context Atlas case study",
+      "locator": "Context object schema",
+      "excerpt": "Each context object required a concept, state, authority, source reference, locale, and expiry rule.",
+      "trust": "prepared"
+    },
+    {
+      "id": "source_context_decisions",
+      "url": "/demo/context-atlas#decisions",
+      "pageTitle": "Context Atlas case study",
+      "locator": "Decision record",
+      "excerpt": "Content, product, and engineering agreed on shared definitions and recorded ownership for each contract field.",
+      "trust": "prepared"
+    },
+    {
+      "id": "source_eval_case_study",
+      "url": "/demo/evaluation-loop",
+      "pageTitle": "Evaluation Loop case study",
+      "locator": "Framework",
+      "excerpt": "The evaluation covered structural validity, grounding, safety constraints, and language quality before content reached human review.",
+      "trust": "prepared"
+    },
+    {
+      "id": "source_eval_schema",
+      "url": "/demo/evaluation-loop#schema",
+      "pageTitle": "Evaluation Loop case study",
+      "locator": "Evaluation schema",
+      "excerpt": "The schema defined expected evidence, severity, automated checks, reviewer decisions, and failure recovery.",
+      "trust": "prepared"
+    },
+    {
+      "id": "source_eval_results",
+      "url": "/demo/evaluation-loop#results",
+      "pageTitle": "Evaluation Loop case study",
+      "locator": "Run summary",
+      "excerpt": "A structured test run produced repeatable results and routed uncertain cases to a human review queue.",
+      "trust": "prepared"
+    },
+    {
+      "id": "source_locale_case_study",
+      "url": "/demo/localization-prototype",
+      "pageTitle": "Localization Prototype case study",
+      "locator": "Prototype overview",
+      "excerpt": "The prototype transformed structured source content into locale-ready variants for review. The case study does not show the production integration or identify implementation ownership.",
+      "trust": "prepared"
+    },
+    {
+      "id": "source_locale_before_after",
+      "url": "/demo/localization-prototype#comparison",
+      "pageTitle": "Localization Prototype case study",
+      "locator": "Before and after",
+      "excerpt": "In the prepared example, the prototype reduced manual preparation from several hours to less than ten minutes.",
+      "trust": "prepared"
+    }
+  ],
+  "capabilityLens": {
+    "id": "lens_ai_systems_demo",
+    "label": "AI systems capability lens",
+    "context": "Investigate whether the reviewed work demonstrates the ability to understand complex context, contribute technical systems thinking, and execute across product, content, and engineering.",
+    "capabilities": [
+      {
+        "id": "cap_context_understanding",
+        "label": "Context understanding",
+        "definition": "Frames the problem, identifies relevant concepts and states, and connects decisions to source authority and user context.",
+        "priority": "primary",
+        "observableSignals": [
+          "Defines the operating context before proposing outputs",
+          "Distinguishes source authority and uncertainty",
+          "Connects user state, product state, and content behavior"
+        ]
+      },
+      {
+        "id": "cap_technical_depth",
+        "label": "Technical depth",
+        "definition": "Translates content or product intent into schemas, system rules, integrations, evaluations, or implementation constraints.",
+        "priority": "primary",
+        "observableSignals": [
+          "Creates operational schemas or contracts",
+          "Understands system boundaries and validation",
+          "Shows implemented or testable technical behavior"
+        ]
+      },
+      {
+        "id": "cap_cross_functional_execution",
+        "label": "Cross-functional execution",
+        "definition": "Moves work across disciplines through clear decisions, ownership, collaboration, and verifiable outcomes.",
+        "priority": "primary",
+        "observableSignals": [
+          "Clarifies personal and shared ownership",
+          "Creates decisions used by multiple functions",
+          "Shows how collaboration affected delivery"
+        ]
+      }
+    ]
+  },
+  "preparedAnalysis": {
+    "id": "analysis_demo_001",
+    "portfolioId": "portfolio_demo_001",
+    "lensId": "lens_ai_systems_demo",
+    "evidenceItems": [
+      {
+        "id": "evidence_context_atlas_context",
+        "capabilityId": "cap_context_understanding",
+        "projectId": "project_context_atlas",
+        "claimId": "claim_context_model",
+        "sourceRef": "source_context_case_study",
+        "excerpt": "Mapped concepts, user states, rules, and source authority before retrieval design.",
+        "state": "demonstrated",
+        "relevance": "direct",
+        "confidence": "high",
+        "rationale": "The work explicitly frames the context model and connects it to system behavior."
+      },
+      {
+        "id": "evidence_context_atlas_technical",
+        "capabilityId": "cap_technical_depth",
+        "projectId": "project_context_atlas",
+        "claimId": "claim_context_model",
+        "sourceRef": "source_context_schema",
+        "excerpt": "Defined required fields for concept, state, authority, source, locale, and expiry.",
+        "state": "partially_demonstrated",
+        "relevance": "direct",
+        "confidence": "medium",
+        "rationale": "The schema shows operational systems thinking, but the reviewed source does not show the implementation itself."
+      },
+      {
+        "id": "evidence_context_atlas_cross",
+        "capabilityId": "cap_cross_functional_execution",
+        "projectId": "project_context_atlas",
+        "claimId": "claim_shared_contract",
+        "sourceRef": "source_context_decisions",
+        "excerpt": "Content, product, and engineering agreed on shared definitions and ownership.",
+        "state": "demonstrated",
+        "relevance": "direct",
+        "confidence": "high",
+        "rationale": "A recorded shared contract and ownership model demonstrate cross-functional execution."
+      },
+      {
+        "id": "evidence_eval_context",
+        "capabilityId": "cap_context_understanding",
+        "projectId": "project_evaluation_loop",
+        "claimId": "claim_eval_framework",
+        "sourceRef": "source_eval_case_study",
+        "excerpt": "Separated structural validity, grounding, safety, and language quality.",
+        "state": "demonstrated",
+        "relevance": "direct",
+        "confidence": "high",
+        "rationale": "The framework decomposes the problem into distinct failure dimensions and review contexts."
+      },
+      {
+        "id": "evidence_eval_technical",
+        "capabilityId": "cap_technical_depth",
+        "projectId": "project_evaluation_loop",
+        "claimId": "claim_eval_implementation",
+        "sourceRef": "source_eval_results",
+        "excerpt": "A structured test run produced repeatable results and routed uncertain cases to review.",
+        "state": "demonstrated",
+        "relevance": "direct",
+        "confidence": "high",
+        "rationale": "The source shows a testable operational path rather than a framework alone."
+      },
+      {
+        "id": "evidence_eval_cross",
+        "capabilityId": "cap_cross_functional_execution",
+        "projectId": "project_evaluation_loop",
+        "claimId": "claim_eval_ownership",
+        "sourceRef": "source_eval_case_study",
+        "excerpt": "We implemented the evaluation pipeline across the product.",
+        "state": "partially_demonstrated",
+        "relevance": "insufficient_information",
+        "confidence": "low",
+        "rationale": "The result appears collaborative, but the reviewed material does not distinguish personal ownership from team ownership."
+      },
+      {
+        "id": "evidence_locale_context",
+        "capabilityId": "cap_context_understanding",
+        "projectId": "project_localization_prototype",
+        "claimId": "claim_locale_model",
+        "sourceRef": "source_locale_case_study",
+        "excerpt": "Reframed preparation as structured transformation rather than string replacement.",
+        "state": "partially_demonstrated",
+        "relevance": "transferable",
+        "confidence": "medium",
+        "rationale": "The framing is relevant to context modeling, but the project addresses localization rather than the full AI-product environment in the lens."
+      },
+      {
+        "id": "evidence_locale_technical",
+        "capabilityId": "cap_technical_depth",
+        "projectId": "project_localization_prototype",
+        "claimId": "claim_locale_technical",
+        "sourceRef": "source_locale_case_study",
+        "excerpt": "The case study does not show the production integration or identify implementation ownership.",
+        "state": "claimed_unsupported",
+        "relevance": "insufficient_information",
+        "confidence": "high",
+        "rationale": "A production implementation is claimed, but the reviewed artifact documents only a prototype and provides no implementation evidence."
+      },
+      {
+        "id": "evidence_locale_cross",
+        "capabilityId": "cap_cross_functional_execution",
+        "projectId": "project_localization_prototype",
+        "state": "not_observed",
+        "relevance": "contextually_different",
+        "confidence": "high",
+        "rationale": "The reviewed project material does not describe collaborators, shared decisions, or handoffs. This does not establish that the person lacks the capability."
+      }
+    ],
+    "gaps": [
+      {
+        "id": "gap_eval_ownership",
+        "capabilityId": "cap_cross_functional_execution",
+        "gapType": "ownership",
+        "explanation": "The evaluation project uses collective ownership language without showing which decisions or implementation steps the portfolio owner personally led.",
+        "relatedEvidenceIds": ["evidence_eval_cross"]
+      },
+      {
+        "id": "gap_locale_support",
+        "capabilityId": "cap_technical_depth",
+        "gapType": "support",
+        "explanation": "The portfolio claims a production integration but provides only a prototype description and no implementation artifact.",
+        "relatedEvidenceIds": ["evidence_locale_technical"]
+      },
+      {
+        "id": "gap_locale_collaboration",
+        "capabilityId": "cap_cross_functional_execution",
+        "gapType": "not_observed",
+        "explanation": "Cross-functional execution is not described in the localization project material reviewed by Pheet.",
+        "relatedEvidenceIds": ["evidence_locale_cross"]
+      },
+      {
+        "id": "gap_locale_context",
+        "capabilityId": "cap_context_understanding",
+        "gapType": "context",
+        "explanation": "The localization framing may transfer to AI systems work, but the reviewed artifact does not show how it handled model behavior, retrieval, or source authority.",
+        "relatedEvidenceIds": ["evidence_locale_context"]
+      }
+    ],
+    "interviewQuestions": [
+      {
+        "id": "question_eval_ownership",
+        "gapId": "gap_eval_ownership",
+        "question": "Which parts of the evaluation pipeline did you personally define or implement, and which decisions belonged to other team members?",
+        "purpose": "Clarify personal ownership within a collectively described project.",
+        "status": "draft"
+      },
+      {
+        "id": "question_locale_implementation",
+        "gapId": "gap_locale_support",
+        "question": "What moved the localization prototype into production, and what implementation artifact could show your contribution?",
+        "purpose": "Seek evidence for the claimed production integration.",
+        "status": "draft"
+      },
+      {
+        "id": "question_locale_context",
+        "gapId": "gap_locale_context",
+        "question": "How would you adapt the structured localization approach for a system where retrieval quality and source authority affect the generated result?",
+        "purpose": "Test whether the demonstrated framing transfers to the capability context in the lens.",
+        "status": "draft"
+      }
+    ]
+  }
+}
