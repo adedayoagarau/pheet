@@ -1,5 +1,6 @@
 [build]
   command = "npm run build"
+  publish = "out"
 
 [build.environment]
   NODE_VERSION = "22"
@@ -7,6 +8,3 @@
 [dev]
   command = "npm run dev"
   targetPort = 3000
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"

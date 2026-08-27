@@ -51,10 +51,9 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000). The prepared journey uses
 no model, database, authentication, or network import service.
 
-For Chrome’s current WebMCP origin trial, copy `.env.example` to `.env.local`
-and set `WEBMCP_ORIGIN_TRIAL_TOKEN` to the token issued for your origin. Without
-it—or in a browser without `document.modelContext`—Pheet clearly enters manual
-mode.
+For WebMCP, use ChatGPT desktop’s in-app browser or enable Chrome’s WebMCP
+testing flag. In a browser without `document.modelContext`, Pheet clearly
+enters manual mode while preserving the complete human journey.
 
 ## Verify
 

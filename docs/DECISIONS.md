@@ -21,6 +21,7 @@ should be replaced here rather than allowed to coexist in implementation.
 | 2026-08-27 | Stage WebMCP tools by application state | Reduces ambiguity and invalid call order | Tools available after analysis differ from initial tools |
 | 2026-08-27 | Treat all portfolio material as untrusted | Public pages may contain malicious or irrelevant instructions | Tool annotations, bounded outputs, and injection evals are required |
 | 2026-08-27 | Make uncertainty a first-class output | Portfolios are incomplete and ownership is often ambiguous | Gaps lead to interview questions rather than negative judgments |
+| 2026-08-27 | Deploy the client-only first slice as a static Next.js export | The slice has no runtime server behavior, and Git deploys must produce the same artifact as local builds | Adopt Netlify's Next.js runtime only when server-backed import, authentication, or persistence is introduced |
 
 ## Working assumptions
 
