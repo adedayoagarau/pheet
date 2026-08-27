@@ -130,6 +130,7 @@ and grounded interview results. Browser-ready copies live in `public/journey/`.
 - [`docs/DECISIONS.md`](docs/DECISIONS.md): decision log
 - [`docs/EVALUATION.md`](docs/EVALUATION.md): golden and live-origin evaluation
 - [`docs/CHALLENGE_SUBMISSION.md`](docs/CHALLENGE_SUBMISSION.md): judge path and demo script
+- [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md): Netlify configuration and production verification
 
 ## Stack
 
