@@ -10,7 +10,7 @@ Connect `adedayoagarau/pheet` to the Netlify site and use:
 - Production branch: `main`
 - Base directory: repository root
 - Build command: `npm run build`
-- Publish directory: `.next`
+- Publish directory: leave unset so Netlify’s OpenNext adapter owns the output
 - Node.js: `22`
 
 These values are committed in `netlify.toml`; site-level overrides should be
